@@ -1,0 +1,536 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0066cc;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #f0f8ff, #e8f4ff);
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom: 3px solid #0066cc;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.cta-button,
+.button {
+  display: inline-block;
+  background-color: #0066cc;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta-button:hover,
+.button:hover {
+  background-color: #0052a3;
+  transform: translateY(-2px);
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+}
+
+.section h2 {
+  font-size: 36px;
+  color: #0066cc;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section.highlight {
+  background-color: #f5f5f5;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3,
+.card h4 {
+  color: #0066cc;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p {
+  color: #666666;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.feature {
+  background-color: white;
+  padding: 20px;
+  border-left: 4px solid #0066cc;
+  border-radius: 4px;
+}
+
+.feature h4 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #666666;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 20px;
+}
+
+table th {
+  background-color: #0066cc;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333333;
+}
+
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Article List */
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-item {
+  background-color: white;
+  border-left: 4px solid #0066cc;
+  padding: 20px;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.article-item:hover {
+  transform: translateX(5px);
+}
+
+.article-item h4 {
+  color: #0066cc;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.article-item p {
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.article-item .date {
+  font-size: 12px;
+  color: #999999;
+  font-style: italic;
+}
+
+/* Insight Card */
+.insight-card {
+  background: linear-gradient(135deg, #e8f4ff, #f0f8ff);
+  border-left: 5px solid #0066cc;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.insight-card blockquote {
+  font-size: 20px;
+  color: #0066cc;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.insight-card .insight-author {
+  color: #666666;
+  font-size: 14px;
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  color: #0066cc;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.info-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #0066cc;
+}
+
+.info-card h3 {
+  color: #0066cc;
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+.info-card .small {
+  font-size: 12px;
+  color: #999999;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0052a3;
+}
+
+/* FAQ Section */
+.faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.faq-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.faq-item h4 {
+  color: #0066cc;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.faq-item p {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Glossary */
+.glossary {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.glossary-item {
+  background-color: white;
+  padding: 18px;
+  border-radius: 6px;
+  border-left: 4px solid #0066cc;
+  line-height: 1.8;
+}
+
+.glossary-item strong {
+  color: #0066cc;
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 50px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  color: #0066cc;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-section p {
+  color: #cccccc;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #0066cc;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555555;
+  color: #999999;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .faq {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  table th,
+  table td {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  nav {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .cta-button,
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 11px;
+  }
+}
